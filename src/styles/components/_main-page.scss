@@ -1,0 +1,329 @@
+.main-page {  
+  overflow-x: hidden;
+
+  &-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    padding-left: 5vw;
+    @media only screen and (max-device-width: 600px) {
+      padding-left: 0;
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      width: 705px;
+      height: 500px; // changed from 642 px to 500px 
+      right: 3.5rem;
+      @media only screen and (max-width: 600px) {
+        right: 0!important;
+        width: 400px!important;
+        height: 325px!important;
+      }
+      @media only screen and (max-width: 768px) {
+        right: 1.5rem;
+        width: 500px;
+        height: 425px;
+      }
+    }
+
+    @media only screen and (min-device-width: 959px) {
+      background: #EBEBFF;
+    }
+    @media only screen and (max-device-width: 959px) {
+      background: #EBEBFF;
+    }
+    background-size: cover;
+    background-position: center;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-family: "Quicksand";
+      color: black;
+
+      @media only screen and (min-device-width: 959px) {
+        width: 50%; // TODO: adjust values
+      }
+
+      h1 {
+        max-width: 40%;
+        font-size: 3em;
+        font-weight: 600;
+        line-height: 50px;
+        margin-top: 0;
+
+        @media only screen and (max-width: 600px) {
+          max-width: 100%;
+        }
+
+        @media only screen and (min-device-width: 600px) {
+          max-width: 50%;
+        }
+
+        @media only screen and (min-device-width: 769px) {
+          max-width: 60%;
+        }
+
+        @media only screen and (min-width: 1025px) {
+          max-width: 40%;
+        }
+
+        span {
+          background-color: #6A44A0;
+          background-image: linear-gradient(93.53deg, #6A44A0 9.07%, #574DB2 89.48%);
+          background-size: 100%;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          -webkit-text-fill-color: transparent; 
+          -moz-text-fill-color: transparent;
+        }
+        
+      }
+
+      p:first-of-type {
+        font-size: 28px; //Changed from 24px in the mockup;
+        font-weight: 500;
+        max-width: 50%;
+        margin: 28px 0;
+        @media only screen and (max-width: 600px) {
+          max-width: 100%;
+          margin: .75rem 0;
+        }
+        @media only screen and (max-width: 768px) {
+          max-width: 80%;
+          margin: .5rem 0;
+          font-size: 1.5rem;
+        }
+        @media only screen and (min-device-width: 769px) {
+          max-width: 70%;
+          margin: .5rem 0;
+        }
+        @media only screen and (min-width: 1025px) {
+          max-width: 60%;
+          margin: .5rem 0;
+        }
+      }
+
+      p {
+        font-size: 20px; //Changed from 18px in the mockup;
+        font-weight: 500;
+        max-width: 35%;
+        margin: 28px 0;
+
+        @media only screen and (max-width: 600px) {
+          max-width: 100%;
+          margin: .75rem 0;
+        }
+        @media only screen and (max-width: 768px) {
+          max-width: 70%;
+          margin: 1rem 0 2rem;
+        }
+        @media only screen and (min-device-width: 769px) {
+          max-width: 50%;
+          margin: 1.5rem 0 2.5rem;
+        }
+        @media only screen and (min-width: 1025px) {
+          max-width: 40%;
+          margin: 1.5rem 0 2.5rem;
+        }
+      }
+
+      @media only screen and (max-device-width: 959px) {
+        p {
+          font-size: 1.5em;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+      }
+
+      @media only screen and (max-device-width: 768px) {
+        p {
+          font-size: 1.25em;
+        }
+      }
+
+      @media only screen and (max-device-width: 450px) {
+        p {
+          font-size: 1em;
+          max-width: 90%;
+        }  
+      }
+
+      .MuiButton-contained {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        color: white;
+        background-color: #6A44A0;
+        border-radius: 50px;
+        padding: 20px 32px;
+        text-transform: capitalize;
+        max-width: 22.5%;
+        @media only screen and (max-width: 600px) {
+          max-width: 70%!important;
+          font-size: 28px;
+        }
+        @media only screen and (max-width: 768px) {
+          max-width: 40%;
+        }
+        @media only screen and (min-width: 992px) {
+          max-width: 35%;
+        }
+        @media only screen and (min-width: 1080px) {
+          max-width: 30%;
+        }
+      }
+      
+      .MuiButton-contained:hover {
+        background-color: #9d6fdd;
+      }
+    }
+  }
+
+
+  .MuiContainer-root {
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0 1.5rem!important;
+    }
+
+    @media only screen and (max-width: 786px) {
+      padding: 0 2rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      padding: 0 2rem;
+    }
+
+    @media only screen and (min-device-width: 959px){
+      height: 525px !important ;
+    }
+
+    .MuiGrid-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .MuiGrid-item {
+        img {
+          width: 100%;
+          margin: auto;
+          display: block;
+        }
+        
+        @media only screen and (max-width: 959px) {
+          img {
+            width: 45vw;
+          }
+        }
+
+      }
+  
+      .survey-image {
+        padding: 20px;
+        @media only screen and (max-width: 959px) {
+          order: 2;
+        }
+      }
+      .survey-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Quicksand";
+        letter-spacing: 1.5px;
+  
+        .description-text {
+          @media only screen and (min-device-width: 959px) {
+            padding-left: 20px;
+          }
+
+          @media only screen and (max-device-width: 450px) {
+            p {
+              font-size: 0.85em;
+            }  
+          }
+  
+          .MuiDivider-root {
+            border: 1px solid $dark-purple;
+            background-color: $dark-purple;
+            margin: 1vh 0;
+          }
+  
+          .MuiButton-contained {
+            font-family: "Catamaran", sans-serif;
+            font-size: 18px;
+            line-height: 20px;
+            align-items: center;
+            color: white;
+            background-color: $dark-purple;
+            border-radius: 50px;
+            padding: 5px 1.5vw;
+            text-transform: capitalize;
+          }
+  
+          .MuiButton-contained:hover {
+            background-color: $purple-text;
+          }
+  
+          .title {
+            display: flex;
+            justify-content: space-between;
+
+            .survey-name {
+              font-weight: 500;
+              font-size: 25px;
+              color: $black-text;
+            }
+
+            .num-questions {
+              color: $dark-purple;
+              align-self: center;
+              font-size: 18px;
+              font-weight: 400;
+            }
+            .survey-text {
+              color: $black-text;
+            }
+          }
+
+          @media only screen and (max-width: 959px) {
+            .title {
+              margin-top: 5vh;
+            }
+          }
+  
+          .start {
+            display: flex;
+            justify-content: space-between;
+            margin: 1vh 0 1vh 0;
+  
+            .survey-time {
+              font-weight: normal;
+              font-size: 18px;
+              color: $dark-purple;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .purple-background {
+    background-color: $lighter-purple;
+  }
+
+}
+
+

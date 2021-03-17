@@ -1,0 +1,170 @@
+@import "./variables.scss";
+
+.review-page {
+  margin: 14vh auto;
+  font-style: normal;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  width: 100vw;
+  
+  /** Mobile **/
+  @media only screen and (max-device-width: 1024px) {
+    &__image-container {
+      display: none;
+    }
+
+    // div.MuiLinearProgress-root {
+    //   max-width: 417px;
+    // }
+
+    button.MuiToggleButton-root {
+      min-width: 250px;
+    }
+  }
+
+  h1 {
+    font-family: "Catamaran", sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: $dark-gray;
+    // margin-top: 150px;
+    margin: 0px;
+    // margin-bottom: 4px;
+  }
+  .MuiLinearProgress-root {
+    height: 16px;
+    background-color: #eee;
+    border-radius: 25px;
+    margin: auto;
+    max-width: 660px;
+  }
+
+  .MuiLinearProgress-barColorPrimary {
+    background-color: $dark-purple;
+  }
+
+  .MuiToggleButton-root.Mui-selected {
+    background: $lighter-purple;
+  }
+
+  .MuiToggleButtonGroup-root {
+    margin: 12px;
+  }
+
+  .MuiToggleButtonGroup-groupedHorizontal:not(first-child) {
+    margin-left: inherit;
+  }
+
+  .MuiToggleButton-root {
+    padding: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-transform: capitalize;
+    color: $dark-gray;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(121, 76, 129, 0.25);
+    border-radius: 5px;
+    margin: 12px;
+    width: 95%;
+  }
+
+  .MuiButton-contained {
+    font-family: "Catamaran", sans-serif;
+    font-size: 24px;
+    line-height: 39px;
+    margin: 10px auto 5vh auto;
+    align-items: center;
+    color: white;
+    background-color: $dark-purple;
+    border-radius: 50px;
+    text-transform: capitalize;
+    min-width: 256px;
+  }
+
+  .MuiButton-contained:hover {
+    background-color: $purple-text;
+  }
+
+  .MuiButton-text {
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: $purple-text;
+    text-transform: capitalize;
+  }
+
+  &__progress-text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: $dark-purple;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 0;
+  }
+
+  &__question-num {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: flex-end;
+    letter-spacing: 0.02em;
+    color: $dark-purple;
+    text-align: start;
+    margin: 50px 0 5px 0;
+  }
+
+  &__question-text {
+    font-family: "Average Sans", sans-serif;
+    font-size: 18px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $dark-gray;
+    text-align: start;
+  }
+
+  &__question-header {
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #835B91;
+  }
+
+  &__submit-text {
+    font-family: Average Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin: 5vh auto 0px;
+    color: #565656;
+  }
+
+  .grid-1 {
+    grid-column: 1;
+  }
+  
+  .grid-2 {
+    @media only screen and (max-device-width: 1024px) {
+      grid-column: 1;
+    }
+    grid-column: 2;
+  }
+
+  @media only screen and (max-device-width: 425px) {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    margin: 15vh auto;
+  }
+}

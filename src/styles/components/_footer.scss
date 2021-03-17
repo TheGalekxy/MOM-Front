@@ -1,0 +1,85 @@
+.footer {
+    position: relative;
+    // height: 150px;
+    padding: 4vh 3vw;
+
+    background: linear-gradient(90.15deg, #6A44A0 11.87%, #5C4AAD 83.62%, #524FB6 101.07%);
+
+    font-family: "Quicksand";
+    color: white;
+
+    .MuiIconButton-root {
+      padding: 0;
+    }
+
+    &-dialogs {
+      margin-top: 8px;
+      .MuiButton-text {
+        font-family: "Quicksand";
+        display: block;
+        text-transform: none;
+        text-align: start;
+        color: white;
+      }
+    }
+
+    &-container {
+      p {
+        padding-bottom: 20px; // Modified from the 38px on figma
+      }
+    }
+
+    .mobile {
+      text-align: center;
+      img {
+        padding: 0 4.5px;
+      }
+    }
+
+    @media only screen and (min-device-width: 959px) {
+      .mobile {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-device-width: 959px) {
+      .normal {
+        display: none;
+      }
+      height: 100px;
+
+      .mobile {
+        display: block;
+      }
+
+      .copyright img {
+        width: 25vw;
+      }
+    }
+
+    .copyright {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      z-index: 1;
+      line-height: 32px;
+      margin-right: 3rem;
+    }
+
+    .MuiButton-text {
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .MuiGrid-item {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+  }

@@ -1,0 +1,181 @@
+.results-page {
+    // margin: 104px auto 98px auto;
+    margin-top: 8vh;
+    font-style: normal;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+
+    /** Mobile **/
+    @media only screen and (max-device-width: 1024px) {
+        &__image-container {
+            display: none;
+        }
+
+        div.MuiLinearProgress-root {
+            max-width: 417px;
+        }
+
+        button.MuiToggleButton-root {
+            min-width: 250px;
+        }
+    }
+
+    h1 {
+        font-family: "Catamaran", sans-serif;
+        font-size: 36px;
+        font-weight: normal;
+        color: $dark-gray;
+        margin-bottom: 4px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    @media (max-width: 960px) {
+        .swing {
+            display: none;
+        }
+        .chairmom {
+            display: none;
+        }
+    }
+
+    img {
+        max-width: 60%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .MuiDivider-root {
+        border: 1px solid $light-purple;
+        background-color: $light-purple;
+    }
+
+    .MuiButton-contained {
+        font-family: "Catamaran", sans-serif;
+        font-size: 24px;
+        line-height: 39px;
+        margin: 5vh auto 3vh;
+        align-items: center;
+        color: white;
+        background-color: $dark-purple;
+        border-radius: 50px;
+        text-transform: capitalize;
+        min-width: 256px;
+    }
+
+    .MuiButton-contained:hover {
+        background-color: $purple-text;
+    }
+
+    .MuiButton-text {
+        font-family: "Catamaran", sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        color: $purple-text;
+        text-transform: capitalize;
+        height: 40px;
+        align-self: center;
+    }
+
+    &__info-title {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        align-items: flex-start;
+        letter-spacing: 0.02em;
+        color: $dark-purple;
+        text-align: start;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    &__info-text {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: $dark-gray;
+        text-align: start;
+        // margin-bottom: 25px;
+        margin-bottom: 0vh;
+    }
+
+    &__result{
+        font-weight: "bold";
+        font-size: 16px;
+    }
+
+    &__info-box {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15px;
+        align-items: flex-start;
+        letter-spacing: 0.02em;
+        color: $dark-gray;
+        text-align: start;
+        background-color: #EFEAF3;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 30px !important;
+        margin-bottom: 50px !important;
+    }
+
+    &__info-dropdown {
+    // padding-top: 0px;
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $dark-purple;
+    cursor: pointer;
+    text-align: start;
+    margin-bottom: 2vh;
+
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+  }
+
+    .collapsible-section {
+        padding-bottom: 4vh;
+    }
+
+    .header{
+        cursor: pointer;
+        border: solid 1px #f2f2f2;
+        padding: 0.5em 1.3em;
+        background-color: #EFEAF3;
+        color: #454346;
+        font-family: Quicksand;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        // width: 100%;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .content{
+        cursor: pointer;
+        border-left: solid 1px #f2f2f2;
+        border-right: solid 1px #f2f2f2;
+        border-bottom: solid 1px #f2f2f2;
+        border-radius: 0 0 5px 5px;
+        padding: 15px;
+        font-family: verdana;
+        font-size: 14px;
+        background-color: #FAFAFA;
+      }
+}

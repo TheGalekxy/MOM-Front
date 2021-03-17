@@ -1,0 +1,109 @@
+.completed-survey-page {
+    margin: 8vh auto 5vh auto;
+    font-style: normal;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+
+    /** Mobile **/
+    @media only screen and (max-device-width: 1024px) {
+        &__image-container {
+            display: none;
+        }
+
+        div.MuiLinearProgress-root {
+            max-width: 417px;
+        }
+
+        button.MuiToggleButton-root {
+            min-width: 250px;
+        }
+    }
+
+    h1 {
+        font-family: "Catamaran", sans-serif;
+        font-size: 36px;
+        font-weight: normal;
+        color: $dark-gray;
+        margin-bottom: 4px;
+    }
+
+    img {
+        max-width: 50%;
+        margin: 40px 0;
+    }
+
+    .MuiLinearProgress-root {
+        height: 16px;
+        background-color: #eee;
+        border-radius: 25px;
+        margin: auto;
+        max-width: 660px;
+    }
+
+    .MuiLinearProgress-barColorPrimary {
+        background-color: $dark-purple;
+    }
+
+    .MuiButton-contained {
+        font-family: "Catamaran", sans-serif;
+        font-size: 24px;
+        line-height: 39px;
+        margin: 10px auto 4vh auto;
+        align-items: center;
+        color: white;
+        background-color: $dark-purple;
+        border-radius: 50px;
+        text-transform: capitalize;
+        min-width: 256px;
+    }
+
+    .MuiButton-contained:hover {
+        background-color: $purple-text;
+    }
+
+    .MuiButton-text {
+        font-family: "Catamaran", sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        color: $purple-text;
+        text-transform: capitalize;
+    }
+
+    &__progress-text {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        color: $dark-purple;
+        font-size: 15px;
+        line-height: 19px;
+        margin-top: 0;
+    }
+
+    &__title-text {
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: $dark-gray;
+        text-align: start;
+        margin: 3vh 0 25px 0;
+    }
+
+    &__description-text {
+        font-family: "Average Sans", sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: $dark-gray;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-device-width: 375px) {
+    .completed-survey-page h1 {
+      font-size: 1.5em;
+    }
+  }

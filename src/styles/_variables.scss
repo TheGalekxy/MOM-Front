@@ -1,0 +1,40 @@
+$dark-purple: #835b91;
+
+$light-purple: #dacde8;
+
+$lighter-purple: #efeaf3;
+
+$dark-gray: #454346;
+
+$purple-text: #7D5F8E;
+
+$black-text: #454346;
+
+$input-text: rgba(86, 86, 86, 0.5); 
+
+@mixin contained-btn {
+    font-family: "Catamaran", sans-serif;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 39px;
+    align-items: center;
+    color: white;
+    background-color: $dark-purple;
+    border-radius: 50px;
+    min-width: 256px;
+    &:hover {
+        background-color: $purple-text;
+    }
+    &:disabled{
+        color: white;
+        background-color: $light-purple;
+    }
+}
+
+@mixin text-btn {
+    font-family: "Catamaran", sans-serif;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 30px;
+    color: $purple-text;
+}

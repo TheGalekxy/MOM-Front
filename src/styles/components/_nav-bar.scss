@@ -1,0 +1,55 @@
+.nav-bar {
+  width: 100vw;
+  flex-wrap: nowrap;
+
+  .MuiTypography-h6 {
+    font-family: "Quicksand";
+    font-weight: 400;
+    color: white;
+    padding: 0px 15px;
+    text-transform: initial;
+  }
+  &.MuiAppBar-colorPrimary {
+    box-shadow: none;
+    background: linear-gradient(90.15deg, #6A44A0 11.87%, #5C4AAD 83.62%, #524FB6 101.07%);
+  }
+
+  &-buttons {
+    text-transform: initial;
+    text-align: center;
+    display: inline-flex;
+
+    &-right {
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+
+    &-menu {
+      .MuiButton-root {
+        padding-top: 10px;
+      }
+    }
+  }
+  &-drawer {
+    .MuiTypography-body1 {
+      font-family: "Quicksand";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0.05em;
+      color: $dark-purple;
+    }
+  }
+
+  @media only screen and (max-device-width: 450px) {
+  .MuiGrid-justify-xs-space-between {
+    flex-wrap: nowrap;
+    padding: 0;
+    }
+  .MuiButton-text {
+    padding: 0px;
+    }
+  }
+}

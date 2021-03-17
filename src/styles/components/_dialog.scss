@@ -1,0 +1,209 @@
+.dialog {
+  &-email {
+    .MuiPaper-root {
+      border-radius: 15.4265px;
+    }
+
+    .MuiDialogTitle-root {
+      .MuiTypography-h6 {
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30.8529px;
+        line-height: 39px;
+        text-align: center;
+        color: $black-text;
+      }
+    }
+
+    .MuiDialogContent-root {
+      padding: 8px 50px;
+      text-align: center;
+
+      .MuiTypography-body1 {
+        font-family: "Average Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19.2831px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+
+      img {
+        margin-top: 24px;
+      }
+    }
+
+    .MuiDialogActions-root {
+
+
+      .MuiGrid-container {
+        margin-top: 44px;
+        margin-bottom: 30px;
+        
+      }
+      .MuiButton-contained {
+        @include contained-btn;
+      }
+
+      .MuiButton-text {
+        @include text-btn;
+        margin-top: 27px;
+      }
+    }
+
+    &-content {
+      margin: 82px 86px 0 86px;
+      .MuiFormControl-root {
+        width: 100%;
+        margin-top: 19px;
+        margin-bottom: 113px;
+        .MuiInputBase-root {
+          box-shadow: inset 0px 3.21061px 8.02652px rgba(0, 0, 0, 0.15);
+          border-radius: 4.01326px;
+          input {
+          }
+          fieldset {
+            border: none;
+          }
+          .MuiInputBase-input {
+            font-family: "Average Sans", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16.053px;
+            line-height: 21px;
+            letter-spacing: 0.05em;
+          }
+        }
+      }
+      .MuiButton-contained {
+        margin-bottom: 55px;
+      }
+      .MuiTypography-body1 {
+        font-family: "Quicksand", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+      }
+    }
+    &-buttons {
+      .MuiButton-contained {
+        margin-bottom: 55px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &-confirmation {
+    &.MuiDialogContent-root {
+      padding: 8px 40px;
+      .MuiTypography-body1 {
+        font-family: "Quicksand", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19.2831px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  &-footer {
+    .MuiDialogTitle-root {
+      .MuiTypography-h6 {
+        font-family: "Catamaran", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30.9518px;
+        line-height: 51px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $black-text;
+      }
+    }
+
+    &-content {
+      .MuiDivider-root {
+        border: 1px solid $light-purple;
+        background-color: $light-purple;
+      }
+      .MuiListItem-root {
+        box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25);
+        .MuiTypography-body1 {
+          margin: 11px;
+          text-align: left;
+        }
+      }
+      .MuiTypography-h6 {
+        font-family: "Average Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.05em;
+      }
+      .MuiTypography-body1 {
+        margin-top: 25px;
+        margin-bottom: 55px;
+        font-family: "Average Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19.3449px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.05em;
+      }
+      &-faq {
+        .MuiTypography-h6 {
+          font-family: "Catamaran", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 33px;
+          letter-spacing: 0.05em;
+        }
+
+        .MuiTypography-body1 {
+          font-family: "Average Sans", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    &-buttons {
+
+        // background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        
+      .MuiFormControlLabel-root {
+        margin: 1.5vh auto;
+        // background-color: red;
+      }
+
+      .MuiButton-contained {
+        @include contained-btn;
+        text-transform: none;
+        margin: 0vh auto 4vh auto;
+      }
+    }
+  }
+
+  &-close-btn {
+    .MuiTypography-root.MuiTypography-h6 {
+      text-align: end;
+    }
+  }
+}
+
+#termsButton {
+  margin-left:auto;
+}

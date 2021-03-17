@@ -1,0 +1,203 @@
+.survey-page {
+  // margin: 90px auto 98px auto;
+  margin-top: 12vh;
+  font-style: normal;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  // height: 100vh;
+  // max-height: 100vh;
+
+  /** Mobile **/
+  @media only screen and (max-device-width: 1440px) {
+    // margin-top: 16vh;
+    h4 {
+      max-width: 80%;
+      font-size: 16px;
+    }
+
+    h5 {
+      max-width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-device-width: 1024px) {
+    h4 {
+      max-width: 100%;
+      font-size: 16px;
+    }
+
+    h5 {
+      max-width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-device-width: 768px) {
+    &__image-container {
+      display: none;
+    }
+
+    div.MuiLinearProgress-root {
+      max-width: 417px;
+    }
+
+    button.MuiToggleButton-root {
+      min-width: 250px;
+    }
+
+    h4 {
+      max-width: 100%;
+      font-size: 12px;
+    }
+
+    h5 {
+      max-width: 100%;
+      font-size: 12px;
+    }
+
+    p {
+      line-height: 20px;
+    }
+  }
+
+  h1 {
+    font-family: "Catamaran", sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: $dark-gray;
+    // margin: 70px 0 4px 0;
+    margin: 3vh 0 1vh;
+  }
+
+  h4 {
+    color: black;
+    font-family: "Quicksand";
+    text-transform: none;
+    font-weight: 500;
+    text-align: left;
+    line-height: normal;
+    display: flex;
+    align-items: left;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    font-weight: 900;
+  }
+
+  h5 {
+    color: gray;
+    font-family: "Quicksand";
+    font-style: italic;
+    text-transform: none;
+    text-align: left;
+    font-weight: 100;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: -18px;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .MuiLinearProgress-root {
+    height: 16px;
+    background-color: #eee;
+    border-radius: 25px;
+    margin: auto auto 5vh auto;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 660px;
+  }
+
+  .MuiLinearProgress-barColorPrimary {
+    background-color: #4E51B9;
+  }
+
+  .MuiDivider-root {
+    border: 1px solid $light-purple;
+    background-color: $light-purple;
+  }
+
+  .MuiToggleButton-root.Mui-selected {
+    background: $lighter-purple;
+  }
+
+  .MuiToggleButton-root {
+    width: 100%;
+    padding: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-transform: capitalize;
+    color: $dark-gray;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin: 3vh auto;
+    min-width: 300px;
+    max-width: 450px;
+  }
+
+  .MuiButton-contained {
+    margin: 5vh auto 5vh auto;
+    @include contained-btn;
+  }
+
+  .MuiButton-text {
+    @include text-btn;
+    font-size: 20px;
+  }
+
+  &__progress-text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: $dark-purple;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 0;
+  }
+
+  &__question-num {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    margin: 0px 0 10px 0;
+    letter-spacing: 0.02em;
+    color: $dark-purple;
+  }
+
+  &__question-text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $dark-gray;
+    margin-top: 20px;
+    text-align: start;
+  }
+
+
+}
+
+
+@media only screen and (max-device-width: 425px) {
+    .survey-page h1 {
+      font-size: 1.8em;
+    }
+  }
