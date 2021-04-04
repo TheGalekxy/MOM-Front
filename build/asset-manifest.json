@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ca72622.chunk.css",
+    "main.js": "/static/js/main.6045c341.chunk.js",
+    "main.js.map": "/static/js/main.6045c341.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bfca2edd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bfca2edd.js.map",
+    "static/js/2.5b6b2015.chunk.js": "/static/js/2.5b6b2015.chunk.js",
+    "static/js/2.5b6b2015.chunk.js.map": "/static/js/2.5b6b2015.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.09dcc98e9a82744e68e7a923928a64a6.js": "/precache-manifest.09dcc98e9a82744e68e7a923928a64a6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7ca72622.chunk.css.map": "/static/css/main.7ca72622.chunk.css.map",
+    "static/js/2.5b6b2015.chunk.js.LICENSE.txt": "/static/js/2.5b6b2015.chunk.js.LICENSE.txt",
+    "static/media/COVID-19-Innovations-in-Healthcare.png": "/static/media/COVID-19-Innovations-in-Healthcare.1f0e2900.png",
+    "static/media/Postpartum-support-international.png": "/static/media/Postpartum-support-international.49f5a49f.png",
+    "static/media/anxiety-photo.png": "/static/media/anxiety-photo.66883dad.png",
+    "static/media/back_to_school.png": "/static/media/back_to_school.e61eb4b2.png",
+    "static/media/chairmom.png": "/static/media/chairmom.73025e5c.png",
+    "static/media/crib.png": "/static/media/crib.0201e79d.png",
+    "static/media/depression-photo.png": "/static/media/depression-photo.30309a02.png",
+    "static/media/flying_kite.png": "/static/media/flying_kite.faaace6b.png",
+    "static/media/foodmom.png": "/static/media/foodmom.10f40a44.png",
+    "static/media/leaves-background.png": "/static/media/leaves-background.242db0d7.png",
+    "static/media/nutrition-carrot.png": "/static/media/nutrition-carrot.3865a24a.png",
+    "static/media/sleep-photo.png": "/static/media/sleep-photo.3b4890e8.png",
+    "static/media/stress-reduction-plant.png": "/static/media/stress-reduction-plant.11e49cd4.png",
+    "static/media/swingmom.png": "/static/media/swingmom.7d3196b1.png",
+    "static/media/uppiesmom.png": "/static/media/uppiesmom.58a642aa.png",
+    "static/media/willow.png": "/static/media/willow.c4182628.png",
+    "static/media/yogaMom.png": "/static/media/yogaMom.d89d2bd8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bfca2edd.js",
+    "static/js/2.5b6b2015.chunk.js",
+    "static/css/main.7ca72622.chunk.css",
+    "static/js/main.6045c341.chunk.js"
+  ]
+}

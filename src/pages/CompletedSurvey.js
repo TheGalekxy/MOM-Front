@@ -33,7 +33,6 @@ const CompletedSurvey = ({ match }) => {
                 startIcon={<ChevronLeftIcon fontSize="large" />}
             >
                 Back to main menu
-                
             </Button>
         <Container maxWidth="md" className="completed-survey-page">
             <h1>{currSurvey.survey_name}</h1>
